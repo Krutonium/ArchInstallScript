@@ -11,6 +11,6 @@ passwd
 useradd -m -g wheel -s /bin/zsh krutonium
 passwd krutonium
 echo 'krutonium	ALL=(ALL:ALL) ALL' >> /etc/sudoers
-pacman -Syu intel-ucode grub2
+pacman -Syu intel-ucode grub
 grub-install --target=i386-pc /dev/sda
 exit
