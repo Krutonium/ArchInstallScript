@@ -12,7 +12,7 @@ mount /dev/sda2 /mnt/home
 pacstrap /mnt base base-devel
 genfstab -U /mnt >> /mnt/etc/fstab
 
-cp ./part2.sh ./mnt/part2.sh
+cp ./part2.sh /mnt/part2.sh
 chmod +x /mnt/part2.sh
 
 arch-chroot /mnt /part2.sh
