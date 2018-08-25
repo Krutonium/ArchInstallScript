@@ -2,11 +2,6 @@
 #Were installing Arch today boys!
 
 pacman -Sy
-dd bs=512 count=500 if=/dev/zero of=/dev/sda
-parted --script /dev/sda \
-mklabel gpt \
-mkpart primary ext4 0% 20GiB \
-mkpart primary ext4 20GiB 100%
 
 mkfs.ext4 /dev/sda1
 mkfs.ext4 /dev/sda2
@@ -22,4 +17,4 @@ chmod +x /mnt/part2.sh
 
 arch-chroot /mnt /part2.sh
 
-reboot
+
