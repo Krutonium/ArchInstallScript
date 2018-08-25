@@ -17,4 +17,10 @@ chmod +x /mnt/part2.sh
 
 arch-chroot /mnt /part2.sh
 
-
+clear
+echo =====================
+echo | Install Complete! |
+echo =====================
+echo
+echo This Installer written by Krutonium
+echo for his own personal use.
