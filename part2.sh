@@ -26,10 +26,4 @@ pacman -S networkmanager gnome budgie-desktop archlinux-wallpaper network-manage
 systemctl enable gdm
 systemctl enable NetworkManager
 
-pacman -S git go --noconfirm
-
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
 exit

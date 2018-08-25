@@ -19,7 +19,7 @@ arch-chroot /mnt /part2.sh
 
 clear
 echo =====================
-echo | Install Complete! |
+echo   Install Complete!
 echo =====================
 echo
 echo This Installer written by Krutonium
