@@ -19,4 +19,6 @@ It targets a 20% / and 80% /home layout. In future installs, simply skip this sc
 It basically leaves you without a runable system, but does configure accounts and language files.
 
 
+# Please feel free to open issues and make PR's to improve this code!
+
 THESE SCRIPTS ARE NOT SAFE FOR CASUAL USE THEY FORMAT DRIVES AND REMOVE DATA. READ AND UNDERSTAND THEM BEFORE USE.
