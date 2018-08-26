@@ -3,6 +3,8 @@ A script to install Arch quickly.
 
 Does what it says on the tin.
 
+[![YouTube](http://img.youtube.com/vi/X9l1ohnBzTE/0.jpg)](http://www.youtube.com/watch?v=X9l1ohnBzTE "Watch it in Action!")
+
 # FEATURES HARDCODED DEFAULTS. BEWARE.
 
 `format.sh` will format /dev/sda without warning or prompting, first using dd to wipe the MBR and Partition table, then setting it up with parted.
