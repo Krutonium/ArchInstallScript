@@ -12,6 +12,7 @@ pacstrap /mnt base base-devel
 genfstab -U /mnt >> /mnt/etc/fstab
 
 cp ./part2.sh /mnt/part2.sh
+cp ./vars /mnt/vars
 chmod +x /mnt/part2.sh
 
 arch-chroot /mnt /part2.sh
