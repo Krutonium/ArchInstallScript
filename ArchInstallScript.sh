@@ -1,6 +1,8 @@
 #!/bin/bash
 #Were installing Arch today boys!
 
+source vars
+
 pacman -Sy
 
 mount /dev/sda1 /mnt
@@ -13,6 +15,9 @@ cp ./part2.sh /mnt/part2.sh
 chmod +x /mnt/part2.sh
 
 arch-chroot /mnt /part2.sh
+
+rm /mnt/part2.sh
+rm /mnt/vars
 
 clear
 echo =====================

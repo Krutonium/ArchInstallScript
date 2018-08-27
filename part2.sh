@@ -1,4 +1,7 @@
 #!/bin/bash
+
+source /vars
+
 rm -rf /etc/localtime
 ln -sf /usr/share/zoneinfo/America/Toronto /etc/localtime
 hwclock --systohc
@@ -10,10 +13,11 @@ mkinitcpio -p linux
 echo ROOT PASSWORD:
 passwd
 echo USER PASSWORD:
-useradd -m -g wheel -s /bin/bash krutonium
-passwd krutonium
-echo 'krutonium	ALL=(ALL:ALL) ALL' >> /etc/sudoers
-
+useradd -m -g wheel -s /bin/bash $username
+passwd $username
+if $addtosudo ; then
+    echo $username'	ALL=(ALL:ALL) ALL' >> /etc/sudoers
+fi
 pacman -S archlinux-keyring --noconfirm
 pacman-key --init
 pacman-key --populate archlinux
