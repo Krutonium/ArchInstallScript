@@ -6,8 +6,8 @@ source /vars
 echo ROOT PASSWORD:
 passwd
 echo USER PASSWORD:
-passwd $username
 useradd -m -g wheel -s /bin/bash $username
+passwd $username
 echo $username'	ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 #user can sudo without password. This is to make part3 work.
 #Sets up the user early.
