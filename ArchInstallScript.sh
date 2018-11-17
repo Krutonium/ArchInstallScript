@@ -14,7 +14,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 cp ./part2.sh /mnt/part2.sh
 cp ./vars /mnt/vars
 chmod +x /mnt/part2.sh
-cp ./part2.sh /mnt/part3.sh
+cp ./part3.sh /mnt/part3.sh
 chmod +x /mnt/part3.sh
 
 
