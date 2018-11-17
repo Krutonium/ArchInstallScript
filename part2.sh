@@ -42,7 +42,7 @@ pacman -S go --noconfirm
 echo MAKEFLAGS="-j$(nproc)" >> /etc/makepkg.conf
 
 #this is just to set up aur packages, since you can't do that as root.
-sudo /part3.sh
+su $username /part3.sh
 
 exit
 
