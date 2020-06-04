@@ -6,7 +6,7 @@ source vars
 pacman -Sy
 
 mount /dev/sda1 /mnt
-pacstrap /mnt base base-devel linux-zen 
+pacstrap /mnt base base-devel linux-zen linux-firmware 
 genfstab -U /mnt >> /mnt/etc/fstab
 
 cp ./part2.sh /mnt/part2.sh
