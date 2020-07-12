@@ -1,4 +1,7 @@
 # ArchInstallScript
+
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Krutonium/ArchInstallScript) [![GitHub License](https://img.shields.io/github/license/Krutonium/ArchInstallScript)](https://github.com/Krutonium/ArchInstallScript/blob/master/LICENSE)
+
 A script to install Arch quickly.
 
 Does what it says on the tin.
